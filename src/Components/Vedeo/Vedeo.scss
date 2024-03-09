@@ -1,0 +1,101 @@
+@import "../../Sass/Variables.scss";
+
+.next-video {
+  max-width: 480px;
+  width: 100%;
+}
+
+.next-video__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 70px;
+}
+
+.next-video__heading {
+  margin: 0;
+  margin-right: 60px;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.next-video__autoplay {
+  display: flex;
+  align-items: center;
+}
+
+.next-video__autoplay__heading {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.autoplay__controller {
+  position: relative;
+  display: block;
+  width: 44px;
+  height: 28px;
+  padding: 2px;
+  mix-blend-mode: normal;
+  border-radius: 14px;
+  background-color: $input-color-light;
+}
+
+.autoplay__button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(2px, -50%);
+  display: block;
+  width: 24px;
+  height: 24px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.237602);
+  border-radius: 50%;
+  background-color: $button-color-light;
+  transition: transform $transition, background-color $transition;
+}
+
+.next-video__autoplay__input:checked + .autoplay__controller > .autoplay__button {
+  transform: translate(18px, -50%);
+  background-color: #2196f3;
+}
+
+.aVedeoo__list {
+  margin: 0;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  list-style-type: none;
+
+  .post {
+    max-width: 100%;
+
+    &__title {
+      max-height: 33px;
+      font-size: 26px;
+      line-height: 33px;
+    }
+
+    &__image {
+      height: 200px;
+    }
+  }
+
+  .post + .post {
+    margin-top: 30px;
+  }
+}
+
+.App--dark {
+  .autoplay__controller {
+    background-color: $input-color-dark;
+  }
+
+  .autoplay__button {
+    background-color: $button-color-dark;
+  }
+}

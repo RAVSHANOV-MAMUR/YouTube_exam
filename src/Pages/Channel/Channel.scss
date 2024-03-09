@@ -1,0 +1,55 @@
+@import "../../Sass/Variables.scss";
+
+.channel{
+  flex-grow: 1;
+  padding-right: 70px;
+}
+
+.channel__banner {
+  margin-bottom: 30px;
+  border-radius: 14px;
+}
+
+.channel__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.channel__top__inner {
+  display: flex;
+  align-items: center;
+}
+
+.channel__top__avatar {
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.channel__top__heading {
+  margin: 0;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.channel__top__text {
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+  color: $text-color-light;
+}
+
+.channel__top__right{
+  display: flex;
+  align-items: center;
+}
+
+.channel__top__button{
+  margin-right: 20px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: $button-color-light;
+}

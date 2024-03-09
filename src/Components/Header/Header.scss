@@ -1,0 +1,263 @@
+@import "../../Sass/Variables.scss";
+
+.header {
+  .container {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: $button-color-light;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 0px $text-color-light;
+  outline: none;
+  cursor: pointer;
+  transition: background-color $transition, color $transition, box-shadow $transition;
+
+  &[name="hamburger"] {
+    margin-right: 20px;
+    color: $heading-color-light;
+  }
+
+  &:hover {
+    background-color: $button-hover-color-light;
+    color: $heading-color-light;
+  }
+
+  &:active {
+    box-shadow: inset 0px 0px 0px 1px $text-color-light;
+  }
+}
+
+.header__link {
+  display: flex;
+  margin-right: 60px;
+  color: $heading-color-light;
+}
+
+.header__form {
+  display: flex;
+  align-items: center;
+  max-width: 830px;
+  width: 100%;
+  margin-right: auto;
+  background-color: $input-color-light;
+  border-radius: 22px;
+}
+
+.header__form__input {
+  width: 100%;
+  padding: 12px 20px;
+  padding-right: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: $heading-color-light;
+
+  &::placeholder {
+    color: $input-placeholder-color-light;
+  }
+}
+
+.header__form__button {
+  display: flex;
+  padding: 0;
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  color: $heading-color-light;
+  cursor: pointer;
+}
+
+.header__buttons {
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.header__item {
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.header__profile {
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 0px $text-color-light;
+  cursor: pointer;
+  transition: box-shadow $transition;
+
+  &:active {
+    box-shadow: 0px 0px 0px 1px $text-color-light;
+  }
+}
+
+.App--dark {
+  .header__link {
+    color: $heading-color-dark;
+  }
+
+  .header__button {
+    color: $button-color-dark;
+    box-shadow: inset 0px 0px 0px 0px $text-color-dark;
+
+    &[name="hamburger"] {
+      color: $heading-color-dark;
+    }
+
+    &:hover {
+      background-color: $button-hover-color-dark;
+      color: $heading-color-dark;
+    }
+
+    &:active {
+      box-shadow: inset 0px 0px 0px 1px $text-color-dark;
+    }
+  }
+
+  .header__form {
+    background-color: $input-color-dark;
+  }
+
+  .header__form__input {
+    color: $heading-color-dark;
+
+    &::placeholder {
+      color: $input-placeholder-color-dark;
+    }
+  }
+
+  .header__form__button {
+    color: $heading-color-dark;
+  }
+
+  .header__profile {
+    box-shadow: 0px 0px 0px 0px $text-color-light;
+
+    &:active {
+      box-shadow: 0px 0px 0px 1px $text-color-light;
+    }
+  }
+}
+
+@media (max-width: 1475px) {
+  .header__form {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__link {
+    margin-right: 30px;
+  }
+
+  .header__form {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    .container {
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-left: 10px;
+    }
+  }
+
+  .header__button {
+    &[name="hamburger"] {
+      margin-right: 10px;
+    }
+  }
+
+  .header__buttons {
+    margin-right: 20px;
+  }
+
+  .header__item {
+    & + & {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .container {
+      padding-left: 20px;
+    }
+  }
+
+  .header__buttons {
+    display: none;
+  }
+
+  .header__button {
+    &[name="hamburger"] {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    .container {
+      padding-bottom: 20px;
+    }
+  }
+
+  .header__link {
+    margin-right: auto;
+  }
+
+  .header__form {
+    width: auto;
+    margin-right: 24px;
+  }
+
+  .header__form__input {
+    display: none;
+  }
+
+  .header__form__button {
+    margin: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    .container {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+
+  .header__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+  }
+}

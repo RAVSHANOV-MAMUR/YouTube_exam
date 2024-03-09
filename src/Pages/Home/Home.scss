@@ -1,0 +1,85 @@
+@import "../../Sass/Variables.scss";
+
+.home {
+  flex-grow: 1;
+  padding-bottom: 30px;
+  overflow: overlay;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.home__top {
+  margin-bottom: 50px;
+}
+
+.home__top__inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.home__top__image {
+  margin-right: 20px;
+}
+
+.home__top__link {
+  margin: 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  text-decoration: none;
+  color: $heading-color-light;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.home__recommended__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  color: $heading-color-light;
+}
+
+.home__recommended {
+  margin-bottom: 50px;
+
+  .post {
+    max-width: 540px;
+    flex-shrink: 0;
+  }
+
+  .post__image {
+    width: 100%;
+    height: 250px;
+  }
+}
+.App--dark {
+  .home__top__link {
+    color: $heading-color-dark;
+  }
+
+  .home__recommended__title {
+    color: $heading-color-dark;
+  }
+}

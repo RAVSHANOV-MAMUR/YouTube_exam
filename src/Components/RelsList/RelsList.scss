@@ -1,0 +1,14 @@
+.list {
+    display: flex;
+    column-gap: 40px;
+    max-width: inherit;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow-x: auto;
+  
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,53 @@
+
+$red: #ff0000;
+
+$bg-color-light: #ffffff;
+$button-color-light: rgba(
+  $color: #000000,
+  $alpha: 0.24,
+);
+$heading-color-light: #19202c;
+$text-color-light: #c2c2c2;
+$input-color-light: rgba(
+  $color: #ebebeb,
+  $alpha: 0.3,
+);
+$input-placeholder-color-light: rgba(
+  $color: #30384c,
+  $alpha: 0.4,
+);
+$nav-color-light: #898989;
+$button-hover-color-light: rgba(
+  $color: #ebebeb,
+  $alpha: 1,
+);
+
+$bg-color-dark: #17171e;
+$button-color-dark: rgba(
+  $color: #ffffff,
+  $alpha: 0.4,
+);
+$heading-color-dark: #ffffff;
+$text-color-dark: rgba(
+  $color: #ffffff,
+  $alpha: 0.4,
+);
+$input-color-dark: rgba(
+  $color: #ebebeb,
+  $alpha: 0.1,
+);
+$input-placeholder-color-dark: rgba(
+  $color: #ffffff,
+  $alpha: 0.4,
+);
+$nav-color-dark: rgba(
+  $color: #ffffff,
+  $alpha: 0.5,
+);
+
+$button-hover-color-dark: rgba(
+  $color: #ebebeb,
+  $alpha: 0.2,
+);
+
+$transition: 0.25s ease;
